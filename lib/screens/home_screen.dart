@@ -13,6 +13,17 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Row(
+              children: const [
+                Icon(
+                  Icons.menu,
+                  size: 30,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -80,7 +91,9 @@ class HomeScreen extends StatelessWidget {
                 )
               ],
             ),
-            const SizedBox(height: 10,),
+            const SizedBox(
+              height: 10,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -88,9 +101,7 @@ class HomeScreen extends StatelessWidget {
                   style: TextButton.styleFrom(
                     primary: Colors.white,
                     textStyle: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold
-                    ),
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   onPressed: () {},
                   child: const Text(
